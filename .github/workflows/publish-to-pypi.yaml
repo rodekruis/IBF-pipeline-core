@@ -1,4 +1,4 @@
-name: Publish Python 🐍 distribution 📦 to PyPI and TestPyPI
+name: Publish Python 🐍 distribution 📦 to TestPyPI
 
 on: push
 
@@ -30,7 +30,7 @@ jobs:
         name: python-package-distributions
         path: dist/
 
-  publish-to-pypi:
+  publish-to-testpypi:
     name: >-
       Publish Python 🐍 distribution 📦 to TestPyPI
     needs:
@@ -54,3 +54,4 @@ jobs:
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         repository-url: https://test.pypi.org/legacy/
+        verbose: true
