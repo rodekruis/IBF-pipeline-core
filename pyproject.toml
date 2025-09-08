@@ -1,16 +1,26 @@
-[tool.poetry]
+[project]
 name = "ibf-pipeline-core"
 version = "0.0.1"
 authors = [
-  "Jacopo Margutti <jmargutti@redcross.nl>"
+  {name="Jacopo Margutti", email="jmargutti@redcross.nl" },
 ]
 description = "IBF pipelines' core library"
 readme = "README.md"
-repository = "https://github.com/rodekruis/IBF-pipeline-core"
-packages = [{include = "pipeline"}]
+requires-python = ">=3.13"
+license = "AGPL-3.0"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/rodekruis/IBF-pipeline-core"
+Issues = "https://github.com/rodekruis/IBF-pipeline-core/issues"
+
+[tool.poetry]
+packages = [
+    { include = "pipeline/core" }
+]
 
 [tool.poetry.dependencies]
-python = "^3.13"
+python = ">=3.13"
 azure-identity = "*"
 azure-keyvault-secrets = "*"
 azure-storage-blob = "*"
