@@ -4,11 +4,11 @@ This library contains the core functionalities and utilities used across various
 
 ## Main Components
 
-*. `Settings`: Manages configuration settings for the pipelines, from a standardized YAML file. It provides methods to load, validate, and access configuration parameters.
-*. `Secrets`: Handles sensitive information such as API keys, passwords, and other credentials. It ensures that secrets are securely stored and accessed only when necessary.
-*. `Logger`: Logging utility that provides a standardized way to log messages, errors, and other information during pipeline execution.
-*. `Load`: Provides functions to load data from various sources, such as databases or APIs.
-*. `Module`: Base class for creating pipeline modules, providing common functionalities and interfaces for module development.
+* `Load`: Provides functions to load data from various sources, such as databases or APIs.
+* `Logger`: Logging utility that provides a standardized way to log messages, errors, and other information during pipeline execution.
+* `Module`: Base class for creating pipeline modules, providing common functionalities and interfaces for module development.
+* `Secrets`: Handles sensitive information such as API keys, passwords, and other credentials. It ensures that secrets are securely stored and accessed only when necessary.
+* `Settings`: Manages configuration settings for the pipelines, from a standardized YAML file. It provides methods to load, validate, and access configuration parameters.
 
 
 
