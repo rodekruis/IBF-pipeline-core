@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "ibf-pipeline-core"
+version = "0.0.1"
+authors = [
+  "Jacopo Margutti <jmargutti@redcross.nl>"
+]
+description = "IBF pipelines' core library"
+readme = "README.md"
+repository = "https://github.com/rodekruis/IBF-pipeline-core"
+packages = [{include = "pipeline"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+azure-identity = "*"
+azure-keyvault-secrets = "*"
+azure-storage-blob = "*"
+beautifulsoup4 = "*"
+black = "*"
+certifi = "*"
+fiona = ">=1.10b2"
+GeoAlchemy2 = "*"
+geopandas = "*"
+netCDF4 = "*"
+pandas = "*"
+PyYAML = "*"
+python-dotenv = "*"
+rasterio = "*"
+rasterstats = "*"
+SQLAlchemy = "*"
+tqdm = "*"
+xarray = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
