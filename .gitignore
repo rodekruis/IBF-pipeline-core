@@ -19,9 +19,6 @@ coverage
 # External code
 node_modules
 
-# HuggingFace custom models
-rodekruis/
-
 # Logs / Cache / temporary files
 logs
 *.log
@@ -29,7 +26,7 @@ npm-debug.log*
 .npm
 
 # Data
-data/*
+data/
 *.nc
 
 # Byte-compiled / optimized / DLL files

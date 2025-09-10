@@ -6,7 +6,7 @@ authors = [
 ]
 description = "IBF pipelines' core library"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.13,<4"
 license = "AGPL-3.0"
 license-files = ["LICEN[CS]E*"]
 
@@ -16,17 +16,22 @@ Issues = "https://github.com/rodekruis/IBF-pipeline-core/issues"
 
 [tool.poetry]
 packages = [
-    { include = "pipeline/core" }
+    { include = "core", from = "ibfpipeline" },
+    { include = "drought", from = "ibfpipeline" },
+    { include = "riverflood", from = "ibfpipeline" },
 ]
 
 [tool.poetry.dependencies]
-python = ">=3.13"
+python = ">=3.13,<4"
 azure-identity = "*"
+azure-cosmos = "*"
 azure-keyvault-secrets = "*"
 azure-storage-blob = "*"
 beautifulsoup4 = "*"
 black = "*"
+cdsapi = "*"
 certifi = "*"
+cfgrib = "*"
 fiona = ">=1.10b2"
 GeoAlchemy2 = "*"
 geopandas = "*"
@@ -35,7 +40,9 @@ pandas = "*"
 PyYAML = "*"
 python-dotenv = "*"
 rasterio = "*"
-rasterstats = "*"
+rasterstats = ">=0.20.0"
+rioxarray = "*"
+scipy = "*"
 SQLAlchemy = "*"
 tqdm = "*"
 xarray = "*"
